@@ -20,7 +20,7 @@ def rx_gray_card(*children, **styles) -> rx.Component:
         justify_content="center",
         gap="0.8rem",
         padding="1rem",
-        border_radius="0.5rem",
+        border_radius="2.5rem",
         background_color=bg_gray_100_css,
         height="100%",
         width="100%",
@@ -99,7 +99,7 @@ def rx_kpi_row() -> rx.Component:
             flex="1 1 0%",
         ),
         flex="none",  # row should not grow nor shrink, keep container fixed height
-        gap="0.5rem",
+        gap="1rem",
         height="25%",
     )
 
@@ -112,7 +112,7 @@ def rx_feature_row() -> rx.Component:
                 flex="3",
                 align_items="center",
                 justify_content="center",
-                border_radius="0.5rem",
+                border_radius="2.5rem",
                 background_image="url('/apple_gradient.png')",
                 color="white",
                 font_weight="600",
@@ -143,17 +143,14 @@ def rx_feature_row() -> rx.Component:
             ),
             flex="1",
             flex_direction="column",
-            gap="0.5rem",
+            gap="1rem",
         ),
         rx.flex(
-            rx.flex(
+            rx_gray_card(
                 rx.image(
                     src="/apple_computers.png",
                     width="75%",
                 ),
-                align_items="center",
-                justify_content="center",
-                flex="2",
             ),
             rx.flex(
                 rx_gray_card(
@@ -173,10 +170,11 @@ def rx_feature_row() -> rx.Component:
                     rx.box("Universal Apps"),
                 ),
                 flex="1",
-                gap="0.8rem",
+                gap="1rem",
             ),
             flex="2",
             flex_direction="column",
+            gap="1rem",
         ),
         rx.flex(
             rx_gray_card(
@@ -203,11 +201,11 @@ def rx_feature_row() -> rx.Component:
             ),
             flex="1",
             flex_direction="column",
-            gap="0.5rem",
+            gap="1rem",
         ),
         # background_color="#93c5fd",
         flex_grow="1",  # row can grow to the rest of space, which is 75%
-        gap="0.8rem",
+        gap="1rem",
     )
 
 
@@ -219,7 +217,7 @@ def index() -> rx.Component:
             flex_direction="column",
             width="100%",
             height="100%",
-            gap="0.5rem",
+            gap="1rem",
             padding="0.8rem",
         ),
         width="100%",

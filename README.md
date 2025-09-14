@@ -6,6 +6,15 @@ Built with `rx.Box`, `rx.Flex` and [CSS Props](https://reflex.dev/docs/styling/c
 
 **NOT RESPONSIVE**, feel free to [do it yourself](https://reflex.dev/docs/styling/responsive)
 
-Reference:
+## Run
+
+I prefer doing this in WSL2:
+
+```sh
+uv sync
+uv run reflex run
+```
+
+## Reference
 
 ![](ref/apple_keynote.png)
