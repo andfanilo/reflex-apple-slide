@@ -1,8 +1,12 @@
 # Challenge: Apple Keynote Slide in Python/Reflex
 
+Reflex version, built with `rx.Box`, `rx.Flex` and [CSS Props](https://reflex.dev/docs/styling/common-props/) as Python attributes.
+
 ![](ref/reflex_look.png)
 
-Built with `rx.Box`, `rx.Flex` and [CSS Props](https://reflex.dev/docs/styling/common-props/) as Python attributes.
+Original:
+
+![](ref/apple_keynote.png)
 
 **NOT RESPONSIVE**, feel free to [do it yourself](https://reflex.dev/docs/styling/responsive)
 
@@ -14,10 +18,6 @@ I prefer doing this in WSL2:
 uv sync
 uv run reflex run
 ```
-
-## Reference
-
-![](ref/apple_keynote.png)
 
 ## Resources
 
